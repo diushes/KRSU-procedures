@@ -1,0 +1,8 @@
+n=int(input())
+print('-'*n)
+
+#procedures_C
+n=int(input())
+for digit in str(n):
+  print(digit) 
+  
