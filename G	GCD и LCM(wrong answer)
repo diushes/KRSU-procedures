@@ -1,0 +1,16 @@
+nums=[int(e) for e in input().split(' ')]
+a=nums[0]
+b=nums[1]
+rang=range(1,10001)
+if a in rang and b in rang:
+  for x in range(min(nums),0,-1):
+    if a%x==0 and b%x==0:
+      GCD=x
+      break
+  for y in range(max(nums),100000):
+    if y%a==0 and y%b==0:
+      LCM=y
+      break
+
+print('GCD',GCD)
+print('LCM',LCM)
