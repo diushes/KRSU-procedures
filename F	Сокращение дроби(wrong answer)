@@ -1,0 +1,12 @@
+nums=[int(a) for a in input().split(' ')]
+for elements in nums:
+  if elements<=10000 and elements>=1 and str(elements)[0]!='0':
+    checker=True
+
+if checker==True:
+  for i in range(min(nums),1,-1):
+    if nums[0]%i==0 and nums[1]%i==0 :
+      a=nums[0]//i
+      b=nums[1]//i 
+      print(a,'/',b)
+      break
