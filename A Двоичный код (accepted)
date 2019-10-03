@@ -1,0 +1,12 @@
+d=[]
+
+n=int(input())
+for i  in range(8):
+  
+  l=n%2
+  n=n//2
+  d.append(l)
+d.reverse()
+
+for element in d:
+  print(element,end='')
