@@ -1,0 +1,21 @@
+inp=int(input())
+def shest(a):
+  rang=range(10,16)
+  
+  l=[]
+  for s in range(a//16):
+    
+    if a<=15:
+      l.append(a)
+      break
+    else:
+      l.append(a%16)
+      a=a//16
+  l2={10:'A',11:'B',12:'C',13:'D',14:'E',15:'F'}
+  for i  in range(len(l)):
+    if l[i] in rang:
+      l[i]=l2[l[i]]
+  for els in l:
+    print(els,end='')
+      
+shest(inp) 
