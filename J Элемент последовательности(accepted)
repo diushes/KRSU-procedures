@@ -1,0 +1,9 @@
+a=[1,2,3]
+b=int(input())
+rang=range(1,151)
+
+if b in rang :
+  for k in range (len(a),b):
+    a.append('')
+    a[k]=a[k-1]+a[k-2]-2*a[k-3]
+  print(a[b-1])
