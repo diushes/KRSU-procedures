@@ -1,0 +1,7 @@
+a=int(input(),2)
+b=str(hex(a))
+l=[]
+for i in range(2,len(b)):
+  l.append(b[i].upper())
+l.reverse()
+print(*l,sep='')
