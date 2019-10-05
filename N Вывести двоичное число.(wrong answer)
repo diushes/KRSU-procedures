@@ -1,0 +1,4 @@
+a=int(input(),16)
+if len(str(a))<=10:
+  b=bin(a)
+  print(int(str(b)[2:]))
