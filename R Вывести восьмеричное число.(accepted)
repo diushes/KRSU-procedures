@@ -1,0 +1,7 @@
+a=int(input(),2)
+b=oct(a)
+l=[]
+for i in range(2,len(str(b))):
+  l.append(int(b[i]))
+l.reverse()
+print(*l,sep='')
